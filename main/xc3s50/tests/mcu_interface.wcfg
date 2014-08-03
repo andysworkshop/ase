@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tmp/mcu_interface_tb.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="constants" />
+            <top_module name="functions" />
+            <top_module name="mcu_interface_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="30" />
+   <wvobject fp_name="/mcu_interface_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/clk100" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk100</obj_property>
+      <obj_property name="ObjectShortName">clk100</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/mcu_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mcu_data[9:0]</obj_property>
+      <obj_property name="ObjectShortName">mcu_data[9:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/mcu_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mcu_wr</obj_property>
+      <obj_property name="ObjectShortName">mcu_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/bram_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_addr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_addr[8:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/bram_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_wr</obj_property>
+      <obj_property name="ObjectShortName">bram_wr</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/bram_din" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_din</obj_property>
+      <obj_property name="ObjectShortName">bram_din</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/bram_dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_dout</obj_property>
+      <obj_property name="ObjectShortName">bram_dout</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/lcd_sender_busy" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_sender_busy</obj_property>
+      <obj_property name="ObjectShortName">lcd_sender_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/lcd_rs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_rs</obj_property>
+      <obj_property name="ObjectShortName">lcd_rs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/lcd_sender_go" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_sender_go</obj_property>
+      <obj_property name="ObjectShortName">lcd_sender_go</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/lcd_sender_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_sender_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">lcd_sender_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/mode" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">mode</obj_property>
+      <obj_property name="ObjectShortName">mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/sprite_number_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sprite_number_i[8:0]</obj_property>
+      <obj_property name="ObjectShortName">sprite_number_i[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/fifo_din_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_din_i[9:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_din_i[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/fifo_dout_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_dout_i[9:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_dout_i[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/fifo_data_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_data_i[9:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_i[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/fifo_wr_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_wr_i</obj_property>
+      <obj_property name="ObjectShortName">fifo_wr_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/fifo_rd_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_rd_i</obj_property>
+      <obj_property name="ObjectShortName">fifo_rd_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/fifo_empty_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_empty_i</obj_property>
+      <obj_property name="ObjectShortName">fifo_empty_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/fifo_full_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_full_i</obj_property>
+      <obj_property name="ObjectShortName">fifo_full_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/fifo_write_state_i" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_write_state_i</obj_property>
+      <obj_property name="ObjectShortName">fifo_write_state_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/fifo_read_state_i" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_read_state_i</obj_property>
+      <obj_property name="ObjectShortName">fifo_read_state_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/mcu_wr_sreg_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mcu_wr_sreg_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mcu_wr_sreg_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/data_ready_i" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">data_ready_i</obj_property>
+      <obj_property name="ObjectShortName">data_ready_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/state_out_sim" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_out_sim</obj_property>
+      <obj_property name="ObjectShortName">state_out_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/firstx_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">firstx_i[8:0]</obj_property>
+      <obj_property name="ObjectShortName">firstx_i[8:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/lastx_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lastx_i[8:0]</obj_property>
+      <obj_property name="ObjectShortName">lastx_i[8:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/firsty_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">firsty_i[9:0]</obj_property>
+      <obj_property name="ObjectShortName">firsty_i[9:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/uut/lasty_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lasty_i[9:0]</obj_property>
+      <obj_property name="ObjectShortName">lasty_i[9:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+</wave_config>

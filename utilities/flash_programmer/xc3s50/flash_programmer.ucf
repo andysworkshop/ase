@@ -1,0 +1,68 @@
+
+#Created by Constraints Editor (xc3s50-vq100-5) - 2014/04/07
+NET "clk40" TNM_NET = "clk40";
+TIMESPEC TS_clk40 = PERIOD "clk40" 25 ns HIGH 50 %;
+
+
+NET "flash_io[3]" IOSTANDARD = LVCMOS33;
+NET "flash_io[2]" IOSTANDARD = LVCMOS33;
+NET "flash_io[1]" IOSTANDARD = LVCMOS33;
+NET "flash_io[0]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[9]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[8]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[7]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[6]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[5]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[4]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[3]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[2]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[1]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[0]" IOSTANDARD = LVCMOS33;
+NET "busy" IOSTANDARD = LVCMOS33;
+NET "clk40" IOSTANDARD = LVCMOS33;
+NET "flash_clk" IOSTANDARD = LVCMOS33;
+NET "flash_ncs" IOSTANDARD = LVCMOS33;
+NET "reset" IOSTANDARD = LVCMOS33;
+NET "mcu_wr" IOSTANDARD = LVCMOS33;
+NET "debug" IOSTANDARD = LVCMOS33;
+
+
+NET "busy" LOC = P59;
+NET "clk40" LOC = P38;
+
+NET "flash_clk" LOC = P47;
+NET "flash_ncs" LOC = P54;
+NET "flash_io[0]" LOC = P49;
+NET "flash_io[1]" LOC = P53;
+NET "flash_io[2]" LOC = P50;
+NET "flash_io[3]" LOC = P44;
+
+
+NET "mcu_wr" LOC = P60;
+NET "reset" LOC = P79;
+NET "mcu_data[9]" LOC = P61;
+NET "mcu_data[8]" LOC = P62;
+NET "mcu_data[7]" LOC = P63;
+NET "mcu_data[6]" LOC = P65;
+NET "mcu_data[5]" LOC = P67;
+NET "mcu_data[4]" LOC = P68;
+NET "mcu_data[3]" LOC = P71;
+NET "mcu_data[2]" LOC = P72;
+NET "mcu_data[1]" LOC = P74;
+NET "mcu_data[0]" LOC = P75;
+
+
+NET "debug" LOC = P55;
+
+# PlanAhead Generated IO constraints 
+
+NET "flash_io[3]" SLEW = FAST;
+NET "flash_io[2]" SLEW = FAST;
+NET "flash_io[1]" SLEW = FAST;
+NET "flash_io[0]" SLEW = FAST;
+NET "debug" SLEW = FAST;
+NET "flash_ncs" SLEW = FAST;
+NET "flash_clk" SLEW = FAST;
+NET "reset" PULLDOWN;
+NET "mcu_wr" PULLUP;
+NET "busy" SLEW = FAST;

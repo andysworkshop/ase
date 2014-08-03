@@ -1,0 +1,50 @@
+# import everything exported in SConstruct
+
+Import('*')
+
+# get a copy of the environment
+
+env=env.Clone(BIT=fpga_blink_bit)
+
+# this project name and location
+
+PROJECT = "fpga_blink"
+MYDIR = "tests/"+PROJECT+"/stm32f429"
+
+# collect the source files
+
+matches=[]
+matches.append(Glob("*.cpp"))
+matches.append(Glob("*.asm"))
+
+# append the system startup files
+
+matches.append("system/LibraryHacks.cpp")
+matches.append("system/f429/Startup.asm")
+matches.append("system/f429/System.c")
+
+# assembler flags
+
+env.Append(ASFLAGS="-I"+MYDIR)
+
+# here's where the linker script is located
+
+env.Append(LINKFLAGS="-T"+MYDIR+"/system/f429/Linker.ld")
+
+# trigger a build with the correct output name
+
+buildoutdir=MYDIR+"/build/"+mode+"/"
+
+elf=env.Program(PROJECT+".elf",matches)
+hex=env.Command(PROJECT+".hex",elf,"arm-none-eabi-objcopy -O ihex "+buildoutdir+PROJECT+".elf "+buildoutdir+PROJECT+".hex")
+bin=env.Command(PROJECT+".bin",elf,"arm-none-eabi-objcopy -O binary "+buildoutdir+PROJECT+".elf "+buildoutdir+PROJECT+".bin")
+lst=env.Command(PROJECT+".lst",elf,"arm-none-eabi-objdump -h -S "+buildoutdir+PROJECT+".elf > "+buildoutdir+PROJECT+".lst")
+size=env.Command(PROJECT+".size",elf,"arm-none-eabi-size --format=berkeley "+buildoutdir+PROJECT+".elf | tee "+buildoutdir+PROJECT+".size")
+
+# bitFile.asm includes the output of the FPGA build and scons needs to be told about it
+
+env.Depends("bitFile.o",env["BIT"])
+
+# return the hex file 
+
+Return("hex")

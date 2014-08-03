@@ -1,0 +1,73 @@
+##############################################################
+#
+# Xilinx Core Generator version 14.7
+# Date: Fri Jul 25 19:21:57 2014
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+#  Generated from component: xilinx.com:ip:c_addsub:11.0
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = false
+SET asysymbol = true
+SET busformat = BusFormatAngleBracketNotRipped
+SET createndf = false
+SET designentry = VHDL
+SET device = xc3s50
+SET devicefamily = spartan3
+SET flowvendor = Other
+SET formalverification = false
+SET foundationsym = false
+SET implementationfiletype = Ngc
+SET package = vq100
+SET removerpms = false
+SET simulationfiles = Behavioral
+SET speedgrade = -5
+SET verilogsim = false
+SET vhdlsim = true
+# END Project Options
+# BEGIN Select
+SELECT Adder_Subtracter xilinx.com:ip:c_addsub:11.0
+# END Select
+# BEGIN Parameters
+CSET a_type=Unsigned
+CSET a_width=9
+CSET add_mode=Add
+CSET ainit_value=0
+CSET b_constant=false
+CSET b_type=Unsigned
+CSET b_value=000000000
+CSET b_width=9
+CSET borrow_sense=Active_Low
+CSET bypass=false
+CSET bypass_ce_priority=CE_Overrides_Bypass
+CSET bypass_sense=Active_High
+CSET c_in=false
+CSET c_out=false
+CSET ce=false
+CSET component_name=nextx_adder
+CSET implementation=Fabric
+CSET latency=1
+CSET latency_configuration=Manual
+CSET out_width=9
+CSET sclr=false
+CSET sinit=false
+CSET sinit_value=0
+CSET sset=false
+CSET sync_ce_priority=Sync_Overrides_CE
+CSET sync_ctrl_priority=Reset_Overrides_Set
+# END Parameters
+# BEGIN Extra information
+MISC pkg_timestamp=2013-07-22T10:35:41Z
+# END Extra information
+GENERATE
+# CRC: b4d05e57

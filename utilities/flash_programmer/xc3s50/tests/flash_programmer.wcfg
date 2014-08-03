@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path=".wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="constants" />
+            <top_module name="flash_programmer_tb" />
+            <top_module name="functions" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/flash_programmer_tb/clk40" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk40</obj_property>
+      <obj_property name="ObjectShortName">clk40</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flash_programmer_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flash_programmer_tb/mcu_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mcu_wr</obj_property>
+      <obj_property name="ObjectShortName">mcu_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flash_programmer_tb/mcu_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mcu_data[9:0]</obj_property>
+      <obj_property name="ObjectShortName">mcu_data[9:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flash_programmer_tb/flash_ncs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_ncs</obj_property>
+      <obj_property name="ObjectShortName">flash_ncs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flash_programmer_tb/flash_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_clk</obj_property>
+      <obj_property name="ObjectShortName">flash_clk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flash_programmer_tb/flash_io" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_io[3:0]</obj_property>
+      <obj_property name="ObjectShortName">flash_io[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flash_programmer_tb/busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flash_programmer_tb/debug" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">debug</obj_property>
+      <obj_property name="ObjectShortName">debug</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flash_programmer_tb/state_out_sim" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_out_sim</obj_property>
+      <obj_property name="ObjectShortName">state_out_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flash_programmer_tb/data_byte" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flash_programmer_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flash_programmer_tb/clk_inv_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_inv_period</obj_property>
+      <obj_property name="ObjectShortName">clk_inv_period</obj_property>
+   </wvobject>
+</wave_config>

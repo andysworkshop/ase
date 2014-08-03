@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path=".wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="constants" />
+            <top_module name="frame_counter_tb" />
+            <top_module name="functions" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/frame_counter_tb/clk100" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk100</obj_property>
+      <obj_property name="ObjectShortName">clk100</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_counter_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_counter_tb/lcd_te" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_te</obj_property>
+      <obj_property name="ObjectShortName">lcd_te</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_counter_tb/frame_index" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">frame_index</obj_property>
+      <obj_property name="ObjectShortName">frame_index</obj_property>
+   </wvobject>
+</wave_config>

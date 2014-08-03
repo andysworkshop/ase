@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tmp/sprite_writer_tb.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="c_addsub_pkg_v11_0" />
+            <top_module name="c_reg_fd_v11_0_comp" />
+            <top_module name="constants" />
+            <top_module name="functions" />
+            <top_module name="numeric_std" />
+            <top_module name="sprite_writer_tb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="xbip_addsub_v2_0_comp" />
+            <top_module name="xbip_pipe_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/sprite_writer_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/clk100" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk100</obj_property>
+      <obj_property name="ObjectShortName">clk100</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/clk100_inv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk100_inv</obj_property>
+      <obj_property name="ObjectShortName">clk100_inv</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/flash_ncs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_ncs</obj_property>
+      <obj_property name="ObjectShortName">flash_ncs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/flash_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_clk</obj_property>
+      <obj_property name="ObjectShortName">flash_clk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/flash_io_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_io_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">flash_io_out[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/flash_io_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_io_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">flash_io_in[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/frame_index" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">frame_index</obj_property>
+      <obj_property name="ObjectShortName">frame_index</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/bram_dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_dout</obj_property>
+      <obj_property name="ObjectShortName">bram_dout</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/sram_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sram_addr[18:0]</obj_property>
+      <obj_property name="ObjectShortName">sram_addr[18:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/sram_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sram_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sram_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/sram_nwr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sram_nwr</obj_property>
+      <obj_property name="ObjectShortName">sram_nwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/bram_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_addr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_addr[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/last_pixel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">last_pixel[15:0]</obj_property>
+      <obj_property name="ObjectShortName">last_pixel[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/sprite_size" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sprite_size[17:0]</obj_property>
+      <obj_property name="ObjectShortName">sprite_size[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/next_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_x[18:0]</obj_property>
+      <obj_property name="ObjectShortName">next_x[18:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/uut/xok_i" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">xok_i</obj_property>
+      <obj_property name="ObjectShortName">xok_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/uut/yok_i" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">yok_i</obj_property>
+      <obj_property name="ObjectShortName">yok_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/uut/x_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x_i[8:0]</obj_property>
+      <obj_property name="ObjectShortName">x_i[8:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/uut/y_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y_i[9:0]</obj_property>
+      <obj_property name="ObjectShortName">y_i[9:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/uut/xok_reset_i" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">xok_reset_i</obj_property>
+      <obj_property name="ObjectShortName">xok_reset_i</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/uut/xorg_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">xorg_i[8:0]</obj_property>
+      <obj_property name="ObjectShortName">xorg_i[8:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/uut/nextx_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">nextx_i[8:0]</obj_property>
+      <obj_property name="ObjectShortName">nextx_i[8:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sprite_writer_tb/busy" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

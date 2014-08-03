@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tmp/mcu_interface_tb.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="constants" />
+            <top_module name="functions" />
+            <top_module name="mcu_interface_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/mcu_interface_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/mcu_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mcu_data[9:0]</obj_property>
+      <obj_property name="ObjectShortName">mcu_data[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/mcu_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mcu_wr</obj_property>
+      <obj_property name="ObjectShortName">mcu_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/debug" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">debug</obj_property>
+      <obj_property name="ObjectShortName">debug</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/flash_io_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_io_in</obj_property>
+      <obj_property name="ObjectShortName">flash_io_in</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/flash_io_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_io_out</obj_property>
+      <obj_property name="ObjectShortName">flash_io_out</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/flash_ncs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_ncs</obj_property>
+      <obj_property name="ObjectShortName">flash_ncs</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_interface_tb/flash_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_clk</obj_property>
+      <obj_property name="ObjectShortName">flash_clk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+</wave_config>

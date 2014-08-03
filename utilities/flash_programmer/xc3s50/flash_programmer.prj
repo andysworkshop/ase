@@ -1,0 +1,6 @@
+vhdl work "constants.vhdl"
+vhdl work "functions.vhdl"
+vhdl work "reset_conditioner.vhdl"
+vhdl work "mcu_interface.vhdl"
+vhdl work "clock_generator.vhdl"
+vhdl work "flash_programmer.vhdl"

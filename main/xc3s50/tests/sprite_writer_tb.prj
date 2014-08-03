@@ -1,0 +1,7 @@
+vhdl work "../sram_addr_adder.vhd"
+vhdl work "../nextx_adder.vhd"
+vhdl work "../constants.vhdl"
+vhdl work "../functions.vhdl"
+vhdl work "../sprite_writer.vhdl"
+vhdl work "sprite_writer_tb.vhdl"
+nosort

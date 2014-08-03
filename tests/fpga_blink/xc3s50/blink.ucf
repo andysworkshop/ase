@@ -1,0 +1,10 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "led_out" IOSTANDARD = LVCMOS33;
+NET "clk" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "led_out" LOC = P55;
+NET "clk" LOC = P38;

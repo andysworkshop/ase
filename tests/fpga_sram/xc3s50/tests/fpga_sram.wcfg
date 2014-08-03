@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/cygwin/home/Andy/src/ase/tests/fpga_sram/xc3s50/ise/fpga_sram_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="fpga_sram_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/fpga_sram_tb/clk40" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk40</obj_property>
+      <obj_property name="ObjectShortName">clk40</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_sram_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_sram_tb/sram_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sram_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sram_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_sram_tb/status" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">status</obj_property>
+      <obj_property name="ObjectShortName">status</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_sram_tb/sram_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sram_addr[18:0]</obj_property>
+      <obj_property name="ObjectShortName">sram_addr[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_sram_tb/sram_nwr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sram_nwr</obj_property>
+      <obj_property name="ObjectShortName">sram_nwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_sram_tb/uut/state_i" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_i</obj_property>
+      <obj_property name="ObjectShortName">state_i</obj_property>
+   </wvobject>
+</wave_config>

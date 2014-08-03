@@ -1,0 +1,5 @@
+vhdl work "../command_fifo.vhd"
+vhdl work "../constants.vhdl"
+vhdl work "../functions.vhdl"
+vhdl work "../mcu_interface.vhdl"
+vhdl work "mcu_interface_tb.vhdl"

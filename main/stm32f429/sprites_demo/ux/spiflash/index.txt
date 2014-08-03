@@ -1,0 +1,8 @@
+spiflash/andysworkshop.bin=0
+spiflash/background.bin=90624
+spiflash/left1.bin=551680
+spiflash/left2.bin=553984
+spiflash/left3.bin=556288
+spiflash/right1.bin=558592
+spiflash/right2.bin=560896
+spiflash/right3.bin=563200

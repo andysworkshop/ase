@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/cygwin/home/Andy/src/ase/main/xc3s50/ise/frame_writer_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="constants" />
+            <top_module name="frame_writer_tb" />
+            <top_module name="functions" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/frame_writer_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/clk100" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk100</obj_property>
+      <obj_property name="ObjectShortName">clk100</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/frame_index" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">frame_index</obj_property>
+      <obj_property name="ObjectShortName">frame_index</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/sram_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sram_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sram_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/lcd_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_wr</obj_property>
+      <obj_property name="ObjectShortName">lcd_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/lcd_db" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_db[7:0]</obj_property>
+      <obj_property name="ObjectShortName">lcd_db[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/lcd_ale" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_ale</obj_property>
+      <obj_property name="ObjectShortName">lcd_ale</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/sram_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sram_addr[18:0]</obj_property>
+      <obj_property name="ObjectShortName">sram_addr[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[0:1001]</obj_property>
+      <obj_property name="ObjectShortName">i[0:1001]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/mode" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">mode</obj_property>
+      <obj_property name="ObjectShortName">mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/uut/sram_addr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sram_addr_i[18:0]</obj_property>
+      <obj_property name="ObjectShortName">sram_addr_i[18:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/uut/x1start" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x1start[18:0]</obj_property>
+      <obj_property name="ObjectShortName">x1start[18:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/uut/x1end" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x1end[18:0]</obj_property>
+      <obj_property name="ObjectShortName">x1end[18:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/uut/x2start" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x2start[18:0]</obj_property>
+      <obj_property name="ObjectShortName">x2start[18:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/uut/x2end" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x2end[18:0]</obj_property>
+      <obj_property name="ObjectShortName">x2end[18:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/frame_writer_tb/uut/next_row_offset" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_row_offset[9:0]</obj_property>
+      <obj_property name="ObjectShortName">next_row_offset[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

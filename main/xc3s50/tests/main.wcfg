@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path=".wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="c_addsub_pkg_v11_0" />
+            <top_module name="c_reg_fd_v11_0_comp" />
+            <top_module name="constants" />
+            <top_module name="functions" />
+            <top_module name="main_tb" />
+            <top_module name="mult_gen_pkg_v11_2" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+            <top_module name="xbip_addsub_v2_0_comp" />
+            <top_module name="xbip_pipe_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/main_tb/clk40" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk40</obj_property>
+      <obj_property name="ObjectShortName">clk40</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/inst_sprite_writer/clk100" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk100</obj_property>
+      <obj_property name="ObjectShortName">clk100</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/inst_sprite_writer/clk100_inv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk100_inv</obj_property>
+      <obj_property name="ObjectShortName">clk100_inv</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/inst_sprite_writer/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/inst_sprite_writer/mode" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">mode</obj_property>
+      <obj_property name="ObjectShortName">mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/inst_sprite_writer/busy" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/inst_sprite_writer/frame_index" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">frame_index</obj_property>
+      <obj_property name="ObjectShortName">frame_index</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/inst_sprite_writer/bram_en_mcu_interface" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_en_mcu_interface</obj_property>
+      <obj_property name="ObjectShortName">bram_en_mcu_interface</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/inst_sprite_writer/bram_en_sprite_writer" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_en_sprite_writer</obj_property>
+      <obj_property name="ObjectShortName">bram_en_sprite_writer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/bram_a_en_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_a_en_i</obj_property>
+      <obj_property name="ObjectShortName">bram_a_en_i</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/bram_a_wr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_a_wr_i[0:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_a_wr_i[0:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/bram_a_addr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_a_addr_i[8:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_a_addr_i[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/bram_a_din_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_a_din_i</obj_property>
+      <obj_property name="ObjectShortName">bram_a_din_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/bram_a_dout_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_a_dout_i</obj_property>
+      <obj_property name="ObjectShortName">bram_a_dout_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/uut/inst_sprite_writer/state_out_sim" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_out_sim</obj_property>
+      <obj_property name="ObjectShortName">state_out_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/flash_io" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_io[3:0]</obj_property>
+      <obj_property name="ObjectShortName">flash_io[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/flash_ncs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_ncs</obj_property>
+      <obj_property name="ObjectShortName">flash_ncs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/flash_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flash_clk</obj_property>
+      <obj_property name="ObjectShortName">flash_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/sram_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sram_addr[18:0]</obj_property>
+      <obj_property name="ObjectShortName">sram_addr[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/sram_nwr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sram_nwr</obj_property>
+      <obj_property name="ObjectShortName">sram_nwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/sram_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sram_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sram_data[7:0]</obj_property>
+   </wvobject>
+</wave_config>

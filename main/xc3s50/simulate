@@ -1,0 +1,69 @@
+#!/usr/bin/perl -w
+
+use strict;
+use warnings;
+
+#
+# set the Xilinx directory if not already set. This must be windows format if on cygwin under Windows
+#
+
+if(!defined $ENV{'XILINX'}) {
+  print "WARNING: XILINX environment variable not set, using Windows default.\n";
+  $ENV{"XILINX"} = "c:\\Xilinx\\14.7\\ISE_DS\\ISE";
+}
+
+#
+# check args
+#
+
+die("Usage: simulate <module> <time>")
+  unless($#ARGV==1);
+
+my $wcfg;
+my ($module,$simtime)=@ARGV;
+
+#
+# create temp dir and ensure exe does not exist
+#
+
+mkdir("tmp");
+unlink("tmp/${module}_tb.exe");
+
+#
+# run fuse
+#
+
+system("fuse -intstyle ise -incremental -o tmp/${module}_tb.exe -prj tests/${module}_tb.prj work.${module}_tb");
+
+#
+# must have worked
+#
+
+if(! -f "tmp/${module}_tb.exe") {
+  exit(1);
+}
+
+#
+# is there a wcfg?
+#
+
+if(-f "tests/${module}.wcfg") {
+  $wcfg="-view tests/${module}.wcfg";
+}
+else {
+  $wcfg="";
+}
+
+#
+# create the command file
+#
+
+open(FILE,">tmp/${module}_tb.cmd");
+print FILE "onerror {resume}\nrun ${simtime}\n";
+close(FILE);
+
+#
+# run isim
+#
+
+system("tmp/${module}_tb.exe -intstyle ise -gui -tclbatch tmp/${module}_tb.cmd $wcfg -wdb tmp/${module}_tb.wdb");

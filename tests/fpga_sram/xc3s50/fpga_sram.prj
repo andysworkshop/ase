@@ -1,0 +1,2 @@
+vhdl work "clock_generator.vhdl"
+vhdl work "fpga_sram.vhdl"
