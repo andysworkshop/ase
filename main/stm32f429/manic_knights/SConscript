@@ -16,6 +16,7 @@ MYDIR = "main/stm32f429/"+PROJECT
 matches=[]
 matches.append(Glob("*.cpp"))
 matches.append(Glob("world/*.cpp"))
+matches.append(Glob("world/defs/*.cpp"))
 matches.append(Glob("*.asm"))
 
 # append the system startup files
