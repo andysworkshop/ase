@@ -58,7 +58,7 @@ env=Environment(ENV=os.environ)
 
 # verify that stm32plus is installed in the defined location
 
-stm32plus_lib=STM32PLUS_INSTALL_DIR+"/lib/stm32plus-"+STM32PLUS_VERSION+"/libstm32plus-"+mode+"-f4-8000000.a"
+stm32plus_lib=STM32PLUS_INSTALL_DIR+"/lib/stm32plus-"+STM32PLUS_VERSION+"/libstm32plus-"+mode+"-f4-8000000-hard.a"
 if not os.path.isfile(stm32plus_lib):
     print stm32plus_lib+" does not exist."
     print "Please edit SConstruct and check the STM32PLUS_INSTALL_DIR and STM32PLUS_VERSION variables."
@@ -72,10 +72,10 @@ env.Replace(AS="arm-none-eabi-as")
 
 # create the C and C++ flags that are needed. We can't use the extra or pedantic errors on the ST library code.
 
-env.Replace(CCFLAGS=["-Wall","-Werror","-ffunction-sections","-fdata-sections","-fno-exceptions","-mthumb","-gdwarf-2","-pipe","-mcpu=cortex-m4","-DSTM32PLUS_F4","-DHSE_VALUE=8000000"])
+env.Replace(CCFLAGS=["-Wall","-Werror","-mfloat-abi=hard","-ffunction-sections","-fdata-sections","-fno-exceptions","-mthumb","-gdwarf-2","-pipe","-mcpu=cortex-m4","-DSTM32PLUS_F4","-DHSE_VALUE=8000000"])
 env.Replace(CXXFLAGS=["-Wextra","-pedantic-errors","-fno-rtti","-std=gnu++0x","-fno-threadsafe-statics"])
 env.Append(ASFLAGS="-mcpu=cortex-m4")
-env.Append(LINKFLAGS=["-Xlinker","--gc-sections","-mthumb","-g3","-gdwarf-2","-mcpu=cortex-m4"])
+env.Append(LINKFLAGS=["-Xlinker","--gc-sections","-mthumb","-g3","-gdwarf-2","-mcpu=cortex-m4","-mfloat-abi=hard","-mfpu=fpv4-sp-d16"])
 env.Append(LINKFLAGS=["-Wl,-wrap,__aeabi_unwind_cpp_pr0","-Wl,-wrap,__aeabi_unwind_cpp_pr1","-Wl,-wrap,__aeabi_unwind_cpp_pr2"])
 
 # mode specific debug/optimisation levels
@@ -116,7 +116,7 @@ env.Append(CPPPATH="#common/stm32f429")
 
 # set the library path
 
-env.Append(LIBS="stm32plus-"+mode+"-f4-8000000.a")
+env.Append(LIBS="stm32plus-"+mode+"-f4-8000000-hard.a")
 
 # replace the compiler values in the environment. The GNU ARM compilers first
 
