@@ -15,6 +15,7 @@ MYDIR = "main/stm32f429/"+PROJECT
 
 matches=[]
 matches.append(Glob("*.cpp"))
+matches.append(Glob("world/*.cpp"))
 matches.append(Glob("*.asm"))
 
 # append the system startup files
@@ -22,6 +23,10 @@ matches.append(Glob("*.asm"))
 matches.append("system/LibraryHacks.cpp")
 matches.append("system/f429/Startup.asm")
 matches.append("system/f429/System.c")
+
+# additional include directory
+
+env.Append(CCFLAGS="-I"+MYDIR)
 
 # assembler flags
 

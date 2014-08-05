@@ -23,7 +23,8 @@ Introduction::Introduction(Panel& panel)
 
 void Introduction::run() {
 
-  uint32_t start,busy_elapsed,free_elapsed,frame_counter;
+  uint32_t start,busy_elapsed,frame_counter;
+  uint32_t free_elapsed __attribute__((unused));
   Buttons buttons;
 
   // fade up the backlight to 90%

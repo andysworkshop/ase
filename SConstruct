@@ -137,6 +137,11 @@ env.Replace(TRCE="trce")
 # main design
 
 main_bit=SConscript("main/xc3s50/SConscript",exports=["env","fpga"],duplicate=0);
+main_hex=SConscript("main/stm32f429/manic_knights/SConscript",
+                          exports=["env","main_bit","mode"],
+                          variant_dir="main/stm32f429/manic_knights/build/"+mode,
+                          duplicate=0);
+
 
 # FPGA blink test
 

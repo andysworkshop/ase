@@ -49,6 +49,10 @@ void StaticPath::doUpdate(float time,const Point& /* bgTopLeft */,Point& myPos) 
     case EasingMode::INOUT:
       newPosition=_easingFunction->easeInOut(time-_timeBase);
       break;
+
+    default:
+      newPosition=0;        // not reached
+      break;
   }
 
   newSpriteNumber=static_cast<uint16_t>(newPosition)+_def.FirstSpriteNumber;
