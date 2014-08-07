@@ -2,10 +2,10 @@
 # Build script for Andy's Sprite Engine (ASE)
 #
 
-# These variables must be set correctly
+# These variables must be set correctly. The earliest version of stm32plus that you can use is 3.4.0 (030400).
 
 STM32PLUS_INSTALL_DIR = "/usr/local/arm-none-eabi"
-STM32PLUS_VERSION     = "030300"
+STM32PLUS_VERSION     = "030400"
 
 import os
 import platform

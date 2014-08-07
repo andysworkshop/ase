@@ -8,7 +8,7 @@ Welcome to the source repository that contains all the VHDL and C++ firmware ass
 
 I'm going to show you how to do a debug build. `fast` and `small` optimised build options are also available. Only the C++ builds are affected by the optimisation option. The VHDL designs are compiled the same regardless of the optimisation option you choose.
 
-## Pre-requisites
+## Prerequisites
 
 There are a few pre-requisites that we need to take care of before you can go ahead with the build.
 
@@ -20,13 +20,19 @@ There are a few pre-requisites that we need to take care of before you can go ah
 
 2. By the time you've built stm32plus your system is almost ready. Now you just need to download and install the free Xilinx ISE Webpack from their website. At the time of writing I'm using release 14.7. It's an absolute monster package so make sure you've got many gigabytes of free disk space.
 
-## Compile it
+## Build it
 
-1. Ensure that the `arm-none-eabi` compiler from the GNU Tools for ARM Embedded Processors toolchain is in your `PATH`. That's the directory that contains the `arm-none-eabi-g++` executable and many others.
+1. `cd` into this repo's top level directory and edit the `SConstruct` file. Check that the two variables at the top are correct for your system:
 
-2. Ensure that the Xilinx tools are in your `PATH` environment variable. That's the directory that contains `xst` and others. On Cygwin I set that up like this: `export PATH=$PATH:/cygdrive/c/Xilinx/14.7/ISE_DS/ISE/bin/nt64`. You should be able to use that to figure out the correct path for your system.
+		STM32PLUS_INSTALL_DIR = "/usr/local/arm-none-eabi"
+		STM32PLUS_VERSION     = "030400"
+If you don't know which version of `stm32plus` that you installed then just take a look in the installation directory and you'll soon see it encoded into the directory names.
 
-3. `cd` into this repo's top level directory that contains the `SConstruct` file and run the build: `scons mode=debug`. Don't use the `-j` option, it doesn't play well with the VHDL dependencies. To clean up afterwards you can do `scons mode=debug -c`. 
+2. Ensure that the `arm-none-eabi` compiler from the GNU Tools for ARM Embedded Processors toolchain is in your `PATH`. That's the directory that contains the `arm-none-eabi-g++` executable and many others.
+
+3. Ensure that the Xilinx tools are in your `PATH` environment variable. That's the directory that contains `xst` and others. On Cygwin I set that up like this: `export PATH=$PATH:/cygdrive/c/Xilinx/14.7/ISE_DS/ISE/bin/nt64`. You should be able to use that to figure out the correct path for your system.
+
+4. `cd` into this repo's top level directory that contains the `SConstruct` file and run the build: `scons mode=debug`. Don't use the `-j` option, it doesn't play well with the VHDL dependencies. To clean up afterwards you can do `scons mode=debug -c`. 
 <br/>
 <br/>
 The build will create the `.bit` Xilinx files and the C++ `.hex` files for uploading to the MCU. Where necessary the `.hex` files automatically compile in the associated `.bit` file for programming into the FPGA on startup.
