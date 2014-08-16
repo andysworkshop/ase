@@ -23,7 +23,7 @@ srcfiles=[
   "frame_writer.vhdl",
   "frame_counter.vhdl",
   "clock_generator.vhdl",
-  "Main.vhdl"
+  "main.vhdl"
 ]
 
 utfile=PROJECT+".ut"
